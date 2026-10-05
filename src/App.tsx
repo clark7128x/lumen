@@ -1,5 +1,3 @@
-// Головний компонент: збірка секцій, управління профілем та маршрутизацією
-
 import { useState, useEffect, useCallback } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -9,20 +7,16 @@ import { TelegramBlock } from './components/TelegramBlock';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { useHashRoute } from './hooks/useHashRoute';
-import { useTheme } from './hooks/useTheme';
 import type { CreatorId, TabId } from './types';
 
 export default function App() {
   const { creatorId, navigate, clear } = useHashRoute();
-  const { resolvedTheme } = useTheme();
   const [activeTab, setActiveTab] = useState<TabId>('posts');
 
-  // Скидання вкладки при зміні блогера
   useEffect(() => {
     setActiveTab('posts');
   }, [creatorId]);
 
-  // Блокування скролу body коли профіль відкритий
   useEffect(() => {
     if (creatorId) {
       document.body.style.overflow = 'hidden';

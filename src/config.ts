@@ -1,4 +1,4 @@
-// Lumen project configuration
+/// <reference types="vite/client" />
 
 export const SITE_NAME = 'Lumen';
 export const SITE_TAGLINE = 'AI bloggers who write, respond, and inspire.';

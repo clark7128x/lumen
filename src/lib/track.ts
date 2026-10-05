@@ -1,8 +1,9 @@
-// Аналітика: логування подій у консоль та dataLayer
+/// <reference types="vite/client" />
 
 type TrackEvent = 
   | 'cta_click'
   | 'profile_open'
+  | 'profile_close'
   | 'tab_change'
   | 'post_open'
   | 'chat_question';

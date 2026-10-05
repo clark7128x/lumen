@@ -7,7 +7,7 @@ import { track } from '../lib/track';
 import { useSwipe } from '../hooks/useSwipe';
 import { PostsTab } from './PostsTab';
 import { ChatTab } from './ChatTab';
-import type { Creator, CreatorId, TabId } from '../types';
+import type { CreatorId, TabId } from '../types';
 
 interface CreatorProfileProps {
   creatorId: CreatorId;

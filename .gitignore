@@ -25,4 +25,8 @@ desktop.ini
 npm-debug.log*
 
 # TypeScript cache
+<<<<<<< HEAD
 *.tsbuildinfo
+=======
+*.tsbuildinfo
+>>>>>>> f3fe877ec8334881c7d0ee65b5435a93dc5893a1
